@@ -1,0 +1,12 @@
+package Edu.Spring_Core.Dependency_Injection.Services;
+
+import Edu.Spring_Core.Dependency_Injection.GreetingService;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+public class FriendlyGreetingService implements GreetingService {
+    public String greet(String name){
+         return "Здорова, братка " + name;
+     };
+}
